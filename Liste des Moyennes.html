@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liste des moyennes</title>
+    <style type="text/css">
+      .auto-style1 {
+        text-align: center;
+      }
+      .auto-style2 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="auto-style2">Liste des moyennes</h1>
+    <table class="auto-style1" style="width: 658px; height: 110px">
+      <thead>
+        <tr>
+          <th class="auto-style1" style="width: 141px">Nom </th>
+          <th class="auto-style1" style="width: 198px">Moyenne</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="auto-style1" style="width: 141px"><?php echo $_POST['Name']; ?></td>
+          <td class="auto-style1" style="width: 198px"><?php echo $moyenne; ?></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

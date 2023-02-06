@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supprimer un élève</title>
+    <style type="text/css">
+.auto-style1 {
+	text-align: center;
+}
+.auto-style2 {
+	text-align: center;
+	text-decoration: underline;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-weight: normal;
+}
+.auto-style3 {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+</style>
+  </head>
+  <body>
+    <h1 class="auto-style2"><strong>Supprimer un eleve</strong></h1>
+    <form>
+        <div class="auto-style1">
+			<span class="auto-style3">
+      <label>Identifiant :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label></span>
+      &nbsp;<select name="id" style="width: 161px">
+        <!-- Liste des identifiants -->
+        <option selected="">---Liste de eleve---</option>
+		<option>009178</option>
+		<option>10015</option>
+		<option>009929</option>
+      </select><br><br>&nbsp;<input type="submit" value="Supprimer" />
+        <input type="reset" value="Annuler" /></div>
+    </form>
+    <script>
+        document.querySelector("input[type=submit]").addEventListener("click", function() {
+          var id = document.querySelector("select[name=id]").value;
+        });
+    </script>
+  </body>
+</html>

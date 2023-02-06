@@ -1,0 +1,36 @@
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    font-size: 5em;
+    letter-spacing: 20px;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50px);
+        letter-spacing: 20px;
+        opacity: 0;
+        color: #0082d1;
+    }
+    10%{
+        opacity: 1;
+    }
+    50%{
+        letter-spacing: -20px;
+        opacity: 1;
+    }
+    100%{
+        transform: translate(50px);
+        letter-spacing: 20px;
+        opacity: 0;
+        color: #0082d1;
+    }
+}
